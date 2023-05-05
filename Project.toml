@@ -1,0 +1,4 @@
+name = "NemaFLPAnalyses"
+uuid = "d13c1f00-513d-422d-a4a6-8042819a2d5d"
+authors = ["Max Opgenoord <11822896+mopg@users.noreply.github.com>"]
+version = "0.1.0"

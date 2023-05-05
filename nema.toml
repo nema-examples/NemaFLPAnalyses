@@ -1,0 +1,18 @@
+name = 'NemaFLPAnalyses'
+uuid = 'd13c1f00-513d-422d-a4a6-8042819a2d5d'
+description = 'Analyses for solving facility location problems.'
+language = 'Julia'
+analysis = true
+code_dependencies = []
+
+[Scripts.final-analysis]
+name = "Final analysis"
+description = "Final analysis for Outdoor Logistics FLP problem"
+path = 'runs/final_analysis.jl'
+code_runner = {type = "ExternalCodeRunner", address = "http://google.com/final-analysis"}
+
+[Scripts.paper-example]
+name = "Paper example"
+description = "Example for the paper describing the FLP methodology."
+path = 'runs/paper_analysis.jl'
+code_runner = {type = "ExternalCodeRunner", address = "http://google.com/paper-example"}
