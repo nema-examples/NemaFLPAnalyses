@@ -3,7 +3,7 @@ uuid = 'd13c1f00-513d-422d-a4a6-8042819a2d5d'
 description = 'Analyses for solving facility location problems.'
 language = 'Julia'
 analysis = true
-code_dependencies = []
+code_dependencies = ["139558ca-173a-4441-81cb-fa3a212d2517"]
 
 [Scripts.final-analysis]
 name = "Final analysis"

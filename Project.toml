@@ -2,3 +2,7 @@ name = "NemaFLPAnalyses"
 uuid = "d13c1f00-513d-422d-a4a6-8042819a2d5d"
 authors = ["Max Opgenoord <11822896+mopg@users.noreply.github.com>"]
 version = "0.1.0"
+
+[deps]
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
