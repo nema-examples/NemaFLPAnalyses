@@ -14,5 +14,11 @@ code_runner = {type = "ExternalCodeRunner", address = "http://google.com/final-a
 [Scripts.paper-example]
 name = "Paper example"
 description = "Example for the paper describing the FLP methodology."
-path = 'runs/paper_analysis.jl'
+path = 'runs/paper_example.jl'
+code_runner = {type = "ExternalCodeRunner", address = "http://google.com/paper-example"}
+
+[Scripts.manual-plan-development]
+name = "Manual plan"
+description = "Plan developed based on manual ranking and order of facilities."
+path = 'runs/manual_plan.jl'
 code_runner = {type = "ExternalCodeRunner", address = "http://google.com/paper-example"}

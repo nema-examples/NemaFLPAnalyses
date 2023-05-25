@@ -3,7 +3,7 @@ using HTTP
 
 function final_analysis(req)
 
-    cmd = `cd /app/NemaFLPAnalyses; nema-cli run final-analysis`
+    cmd = `nema-cli run -s final-analysis`
 
     run(cmd)
 
@@ -12,7 +12,7 @@ end
 
 function paper_example(req)
 
-    cmd = `cd /app/NemaFLPAnalyses; nema-cli run paper-example`
+    cmd = `nema-cli run -s paper-example`
 
     run(cmd)
 
@@ -20,8 +20,8 @@ function paper_example(req)
 end
 
 router = HTTP.Router()
-HTTP.register!(router, "GET", "/final-analysis", final_analysis)
-HTTP.register!(router, "GET", "/paper-example", paper_example)
+HTTP.register!(router, "GET", "/julia/final-analysis", final_analysis)
+HTTP.register!(router, "GET", "/julia/paper-example", paper_example)
 
 # set up asynchronously because otherwise REPL freezes
 HTTP.serve(router, "0.0.0.0", 8000)
